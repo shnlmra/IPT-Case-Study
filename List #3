@@ -1,0 +1,41 @@
+#3. Starting with the list of the previous exercise, write Python statements to do the following: 
+#a. Append “banana” and 67 to the list. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+List.append (“banana”)
+List.append (67)
+print (List) 
+#Outcome: [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5, “banana”, 67]
+
+#b. Insert the value “dog” at position 3. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+List.insert (3, “dog”)
+print (List)
+#Outcome: [67, 62.9, “hi”, “dog”, False, 8, 67, ‘apple’, 6.5]
+
+#c. Insert the value 909 at the start of the list. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+List.insert (0, 909)
+print (List)
+#Outcome: [909, 67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+
+#d. Find the index of “hi”. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+print (List.index(“hi”))
+#Outcome: 2
+
+#e. Count the number of 67s in the list. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+print (List.count(67))
+#Outcome: 2 
+
+#f. Remove the first occurrence of 67 from the list. 
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+List.remove (67)
+print (List)
+#Outcome: [62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+
+#g. Remove False from the list using pop and index
+List = [67, 62.9, “hi”, False, 8, 67, ‘apple’, 6.5]
+List.pop (List.index(False))
+print.List
+#Outcome: [67, 62.9, “hi”, 8, 67, ‘apple’, 6.5]

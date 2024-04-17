@@ -1,0 +1,45 @@
+#4. Write a program that asks the user to enter size of list and input a list of integers. Do the following: 
+#a. Print the sum of items in the list. 
+List = input (“Enter as many numbers as you like:”)
+print (“The sum of the list is: “, len(List))
+
+#b. Print the last item in the list.
+List = [1, 2, 3, 4, 5]
+print (“the list is:”, list)
+print (“the last number in the list is:”, List.pop()) 
+#Outcome: 5
+
+#c. Print the list in reverse order. 
+List = [1, 2, 3, 4, 5]
+print (“the list is:”, List)
+List.reverse()
+print (“The list in reverse is:”, List)
+#Outcome: [5, 4, 3, 2, 1]
+
+#d. Print Yes if the list contains a 5 and No otherwise. 
+List = [1, 2, 3, 4, 5]
+if 5 in List
+    print (“Yes, there is a Number 5”)
+else
+    print (“No, there is no Number 5”)
+#Outcome: Yes, there is a Number 5
+
+#e. Print how many integers in the list are less than 5. 
+List = [1,2,3,4,5]
+for int in List:
+    if int < 5:
+        print("Integers less than 5 in the list:", int)
+#Outcome:
+#Integers less than 5 in the list: 1
+#Integers less than 5 in the list: 2
+#Integers less than 5 in the list: 3
+#Integers less than 5 in the list: 4
+
+#f. Remove the first and last items from the list, sort the remaining items, and print the result.
+List = [1,2,3,4,5]
+print (“The list is:”, List)
+List.remove (5); List.remove (1)
+print (“List after removing the first and last item and sorting it out is:”, sorted(List))
+#Outcome: 
+#The list is: [1, 2, 3, 4, 5]
+#List after removing the first and last item and sorting it out is: [2, 3, 4]
