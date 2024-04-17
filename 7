@@ -1,0 +1,22 @@
+def user_overcompensate(arr):
+    # Prompt the user to enter a number
+    user_input = int(input("Enter a number: "))
+    
+    # Iterate through numbers from 1 to the user_input
+    for x in range(1, user_input + 1):
+        # Check if x is a factor of user_input
+        if user_input % x == 0:
+            # If x is a factor, add it to the list
+            arr.append(x)
+    
+    # Return the user_input and the list of factors
+    return user_input, arr
+
+# Initialize an empty list
+blacklist = []
+
+# Call the function to get user input and calculate factors
+user_input, blacklist = user_overcompensate(blacklist)
+
+# Print the user input and the list of factors
+print(f"The list of factors of {user_input} are: {blacklist}")
